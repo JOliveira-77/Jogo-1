@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da 2ª Lei de Mendel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da 2ª Lei de Mendel</h1>
+        <p>Crie cruzamentos e observe a segregação independente dos genes.</p>
+        <div class="plants">
+            <div class="plant" id="plant1">
+                <h2>Planta 1</h2>
+                <label for="plant1-gene1">Gene 1:</label>
+                <select id="plant1-gene1">
+                    <option value="A">A</option>
+                    <option value="a">a</option>
+                </select>
+                <label for="plant1-gene2">Gene 2:</label>
+                <select id="plant1-gene2">
+                    <option value="B">B</option>
+                    <option value="b">b</option>
+                </select>
+            </div>
+            <div class="plant" id="plant2">
+                <h2>Planta 2</h2>
+                <label for="plant2-gene1">Gene 1:</label>
+                <select id="plant2-gene1">
+                    <option value="A">A</option>
+                    <option value="a">a</option>
+                </select>
+                <label for="plant2-gene2">Gene 2:</label>
+                <select id="plant2-gene2">
+                    <option value="B">B</option>
+                    <option value="b">b</option>
+                </select>
+            </div>
+        </div>
+        <button id="cross-button">Cruzar Plantas</button>
+        <div id="result"></div>
+        <div id="punnett-square"></div>
+        <div id="probability-chart"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html
